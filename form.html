@@ -1,0 +1,16 @@
+<form name="form">
+  <legend>Editando Alumnos</legend>
+  <div class="form-group">
+    <label>Nombre</label>
+    <input type="text" ng-model="project.nombre" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>id</label>
+    <input type="text" ng-model="project.id" class="form-control">
+  </div>
+  <div class="well">
+    <a class="btn btn-primary" ng-click="save()" ng-disabled="!hasChanges()||form.$invalid">Save</a>
+    <a class="btn btn-warning" ng-href="#/list">Atras</a>
+    <a class="btn btn-danger" ng-click="remove()" ng-disabled="!project.$id()">eliminar</a>
+  </div>
+</form>
